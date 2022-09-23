@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/trushaj/Demo1#readme",
   "dependencies": {
+    "pg": "^8.8.0",
     "sequelize": "^6.23.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
   }
 }
