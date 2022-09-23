@@ -7,6 +7,9 @@ const path=require("path");
 
 const bodyParser= require("body-Parser");
 
+//Db connection
+require("./database/connections");
+
 //Engine
 app.set("view engine","ejs");
 
@@ -21,7 +24,7 @@ app.use(router);
 const rootPath=path.resolve("./Sequelize/dist");
 app.use(express.static(rootPath));
 
-return.use((err,req,res,next)=>{
+return use((err,req,res,next)=>{
     if(err){
         //Handle file type & maxsize of img
         return res.send(err.message);
